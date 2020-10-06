@@ -8,17 +8,13 @@ public abstract class Warrior extends Inhabitant  {
     public static int no_of_warrior = 0;
     public static int immobile_warrior = 0;
     public static int immobile_supper_warrior = 0;
-    boolean Swim;
-    SwimFin swimfin;
-    private boolean immortal;
-    private boolean dead;
+    boolean Swim = true;
+    SwimFin swimfin = new SwimFin();
+    private boolean immortal = false;
+    private boolean dead = false;
 
     public Warrior(String name, int age) {
         super(name, age);
-        dead = false;
-        swimfin = new SwimFin();
-        Swim = true;
-        immortal = false;
     }
 
     public SwimFin looseSwimmingFin() {
@@ -51,7 +47,7 @@ public abstract class Warrior extends Inhabitant  {
     }
 
     public void setSwim(boolean swim) {
-        Swim = swim;
+        this.Swim = swim;
     }
 
     public void update(LotusFlower lotusFlower) {
