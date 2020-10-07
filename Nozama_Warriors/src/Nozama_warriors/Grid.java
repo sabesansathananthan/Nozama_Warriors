@@ -104,7 +104,7 @@ public class Grid implements Observable {
         }
         GameDemo.gui.paintAgain();
         MakeSound makeSoundswim = new MakeSound();
-        makeSoundswim.playSound("C:/Users/Sabesan/Downloads/Nozama_Warriors/Swim.wav");
+        makeSoundswim.playSound("./assets/audio/Swim.wav");
         if (checkFish(newx, newy) && (notreached)) {
             System.out.println(w.getName() + " Swims From (" + oldx + "," + oldy + ") To (" + (newx) + "," + newy + ")");
             notifyFish(((Fish) getinhabitant(newx, newy)), w);
@@ -130,7 +130,7 @@ public class Grid implements Observable {
                     addInhabitant(w, 5, 5, 1, w.getName());
                     GameDemo.gui.paintAgain();
                     MakeSound makeSoundfinish = new MakeSound();
-                    makeSoundfinish.playSound("C:/Users/Sabesan/Downloads/Nozama_Warriors/Finish.wav");
+                    makeSoundfinish.playSound("./assets/audio/Finish.wav");
                 }
                 return false;
             }
