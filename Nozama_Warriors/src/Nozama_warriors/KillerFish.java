@@ -22,7 +22,7 @@ public class KillerFish extends Fish {
             eatSwimFin(warrior);                                                                                        //eating Swimfin
             kill(warrior);                                                                                              //Killing Warrior
             MakeSound makeSoundfinish = new MakeSound();
-            makeSoundfinish.playSound("C:/Users/Sabesan/Downloads/Nozama_Warriors/Kill.wav");
+            makeSoundfinish.playSound("./assets/audio/Kill.wav");
             Warrior.no_of_warrior--;
         }
     }

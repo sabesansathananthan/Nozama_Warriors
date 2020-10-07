@@ -14,7 +14,7 @@ public class GUI extends JPanel {
         jf.setVisible(true);
         jf.setBackground(new Color(0, 102,204));
         jf.setBounds(0,0,890,890);
-        jf.setIconImage(new ImageIcon("C:/Users/Sabesan/Downloads/Nozama_Warriors/Warrior.png").getImage());
+        jf.setIconImage(new ImageIcon("./assets/img/Warrior.png").getImage());
     }
 
     @Override
@@ -23,13 +23,12 @@ public class GUI extends JPanel {
          * these images are used for indicate inhabitants
          * Every inhabitant has unique images
          */
-        Image nwImg = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\W.png");
-        ImageIcon nwImg1 = new ImageIcon("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\W.png");
-        Image swImg = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\SW.png");
-        Image infImg = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\inf.png");
-        Image kfImg = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\kf.png");
-        Image rfImg = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\rf.png");
-        Image lfImg = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Sabesan\\Downloads\\Nozama_Warriors\\ICON\\lf.png");
+        Image nwImg = Toolkit.getDefaultToolkit().getImage("./assets/icon/W.png");
+        Image swImg = Toolkit.getDefaultToolkit().getImage("./assets/icon/SW.png");
+        Image infImg = Toolkit.getDefaultToolkit().getImage("./assets/icon/inf.png");
+        Image kfImg = Toolkit.getDefaultToolkit().getImage("./assets/icon/kf.png");
+        Image rfImg = Toolkit.getDefaultToolkit().getImage("./assets/icon/rf.png");
+        Image lfImg = Toolkit.getDefaultToolkit().getImage("./assets/icon/lf.png");
 
         //Draw the grid lines
         g.setColor(Color.black);
